@@ -92,7 +92,7 @@ public class TaskServiceImpl implements TaskService {
         Task task = taskRepository.findById(taskId)
                 .orElseThrow(() -> new NotFoundException(String.format("Task %d is not found.", taskId)));
         if (!user.getId().equals(task.getCreator().getId())
-                || !user.getId().equals(task.getPerformer().getId())) {
+                && !user.getId().equals(task.getPerformer().getId())) {
             throw new ValidationDataException("You can only change status your created tasks or if you are a performer");
         }
         task.setStatus(newStatus);
@@ -121,7 +121,7 @@ public class TaskServiceImpl implements TaskService {
         Task task = taskRepository.findById(taskId)
                 .orElseThrow(() -> new NotFoundException(String.format("Task %d is not found.", taskId)));
         Comment comment = new Comment(null, task, commentInDto.getTextComment(), LocalDateTime.now(), userCreator);
-        return new ResponseEntity<>(MapperComment.mapToCommentDto(commentRepository.save(comment)), HttpStatus.OK);
+        return new ResponseEntity<>(MapperComment.mapToCommentDto(commentRepository.save(comment)), HttpStatus.CREATED);
     }
 
     @Override

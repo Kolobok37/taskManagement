@@ -17,7 +17,7 @@ public enum StatusTask {
                 return status;
             }
         }
-        throw new IllegalArgumentException("Invalid status value: " + value);
+        throw new IllegalArgumentException("Не валидное значение статуса: " + value);
     }
 
     public int getValue() {

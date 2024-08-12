@@ -4,7 +4,7 @@ services:
   task_manager:
     build: ./
     container_name: task_manager
-    restart: no
+    restart: always
     depends_on:
       task_manager_db:
         condition: service_healthy
@@ -12,7 +12,7 @@ services:
       - "8080:8080"
     environment:
       - SPRING_DATASOURCE_URL=jdbc:postgresql://task_manager_db:5432/task_manager_db
-      - SPRING_DATASOURCE_USERNAME=test
+      - SPRING_DATASOURCE_USERNAME=postgres
       - SPRING_DATASOURCE_PASSWORD=test
 
 
@@ -29,7 +29,7 @@ services:
       retries: 10
     environment:
       POSTGRES_DB: task_manager_db
-      POSTGRES_USER: test
+      POSTGRES_USER: postgres
       POSTGRES_PASSWORD: test
     volumes:
       - ./schema.sql:/docker-entrypoint-initdb.d/schema.sql

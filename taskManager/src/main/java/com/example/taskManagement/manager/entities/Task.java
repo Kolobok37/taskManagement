@@ -24,10 +24,11 @@ public class Task {
     @Column(name = "description")
     private String description;
     @Column(name = "status")
-    @Enumerated(EnumType.ORDINAL)
+    @Enumerated()
     private StatusTask status;
+    @Enumerated()
     @Column(name = "priority")
-    private String priority;
+    private Priority priority;
     @Column(name = "creation_date")
     private LocalDateTime creationDate;
     @Column(name = "completion_date")

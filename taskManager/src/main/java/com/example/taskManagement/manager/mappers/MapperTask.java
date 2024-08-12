@@ -19,7 +19,7 @@ public class MapperTask {
 
     public static TaskOutDto mapToTaskOutDto(Task task) {
         return new TaskOutDto(task.getId(), task.getTitle(), task.getDescription(), task.getStatus().toString(),
-                task.getPriority(), task.getCreationDate(), task.getCompletionDate(),
+                task.getPriority().toString(), task.getCreationDate(), task.getCompletionDate(),
                 MapperUser.mapToUserDto(task.getCreator()), MapperUser.mapToUserDto(task.getPerformer()),
                 task.getComments().stream().map(MapperComment::mapToCommentDto).collect(Collectors.toList()));
     }

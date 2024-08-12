@@ -9,10 +9,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
 
+@SpringBootTest
 public class TaskManagementApplicationTest {
-    @Test
-    public void test1() {
-        System.out.println(11);
-        Assert.assertEquals(1,1);
-    }
 }

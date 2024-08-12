@@ -1,5 +1,6 @@
 package com.example.taskManagement.manager.dto;
 
+import com.example.taskManagement.manager.entities.Priority;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
@@ -21,7 +22,7 @@ public class TaskInDto {
     @Size(min = 5, max = 50, message = "Описание задачи должно быть менее 500 символов")
     private String description;
     @Schema(description = "Приоритет задачи", example = "Low или Mid или High")
-    private String priority;
+    private Priority priority;
     @Schema(description = "Дата и время окончания", example = "2024-08-10T18:45:51.951731")
     private LocalDateTime completionDate;
 }
