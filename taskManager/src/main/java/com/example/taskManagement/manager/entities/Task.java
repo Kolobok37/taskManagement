@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.Type;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -23,7 +24,7 @@ public class Task {
     @Column(name = "description")
     private String description;
     @Column(name = "status")
-    @Enumerated(EnumType.STRING)
+    @Enumerated()
     private StatusTask status;
     @Column(name = "priority")
     private String priority;
