@@ -22,7 +22,7 @@ public class Task {
     private String title;
     @Column(name = "description")
     private String description;
-    @Column(columnDefinition = "enum('Created','Working','Completed')")
+    @Column(name = "status")
     @Enumerated(EnumType.STRING)
     private StatusTask status;
     @Column(name = "priority")
