@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8557cfeb-47c0-4da6-8a9f-ad4db67e9c34" name="Changes" comment="delete trash">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/taskManager/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/taskManager/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/taskManager/src/main/java/com/example/taskManagement/manager/mappers/MapperTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/taskManager/src/main/java/com/example/taskManagement/manager/mappers/MapperTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/taskManager/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/taskManager/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/taskManager/src/test/java/com/example/taskManagement/TaskManagementApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Kolobok37&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Kolobok37/taskManagement.git&quot;,
+    &quot;accountId&quot;: &quot;c73d67ea-d686-408e-87d3-8529fb086ac6&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/hibernate/orm/hibernate-core/6.5.2.Final/hibernate-core-6.5.2.Final-sources.jar!/org/hibernate/resource/transaction/backend/jdbc/internal/JdbcIsolationDelegate.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2k6iZZLCyVmMP5aQOqobBJoM6aG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.TaskManagementApplication.executor": "Run",
+    "Docker.Dockerfile.executor": "Run",
+    "Docker.docker-compose.yml.task-manager: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
+    "Docker.taskManager.task_manager_db: Compose Deployment.executor": "Run",
+    "Docker.taskManager/Dockerfile build.executor": "Run",
+    "Docker.taskManager/Dockerfile.executor": "Run",
+    "Docker.taskManager: Compose Deployment.executor": "Run",
+    "JUnit.TaskManagementApplicationTests.executor": "Run",
+    "JUnit.TaskServiceTest.executor": "Run",
+    "JUnit.TaskServiceTest.getTaskTestWhenTaskExists (1).executor": "Run",
+    "JUnit.TaskServiceTest.getTaskTestWhenTaskExists.executor": "Run",
+    "JUnit.TaskServiceTest.getTaskTestWhenTaskNotExists.executor": "Run",
+    "Maven.taskManagement [clean].executor": "Run",
+    "Maven.taskManagement [package].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/Aleksandr/IdeaProjects/taskManagement/taskManager/src/test/java/com/example/taskManagement/com/example/taskManagement",
+    "last_opened_file_path": "C:/Users/Aleksandr/Downloads/taskManagement",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.31149426",
+    "settings.editor.selected.configurable": "MavenSettings"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Aleksandr\IdeaProjects\taskManagement\taskManager" />
+      <recent name="C:\Users\Aleksandr\IdeaProjects\taskManagement\taskManager\src\main" />
+      <recent name="C:\Users\Aleksandr\IdeaProjects\taskManagement\src" />
+      <recent name="C:\Users\Aleksandr\IdeaProjects\taskManagement\taskManager\src" />
+      <recent name="C:\Users\Aleksandr\IdeaProjects\taskManagement" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Aleksandr\IdeaProjects\taskManagement\taskManager\src\test" />
+      <recent name="C:\Users\Aleksandr\IdeaProjects\taskManagement\taskManager\src" />
+      <recent name="C:\Users\Aleksandr\IdeaProjects\taskManagement\taskManager" />
+      <recent name="C:\Users\Aleksandr\IdeaProjects\taskManagement" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="src.test.java.com.example" />
+      <recent name="src.test" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.taskManagement.manager.exception" />
+      <recent name="com.example.taskManagement.manager" />
+      <recent name="com.example.taskManagement" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Docker.taskManager: Compose Deployment">
+    <configuration name="TaskManagementApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.taskManagement.TaskManagementApplication" />
+      <module name="taskManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.taskManagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskServiceTest.getTaskTestWhenTaskNotExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="taskManagement" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java.com.example.taskManagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="java.com.example.taskManagement" />
+      <option name="MAIN_CLASS_NAME" value="java.com.example.taskManagement.TaskServiceTest" />
+      <option name="METHOD_NAME" value="getTaskTestWhenTaskNotExists" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="taskManager: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="taskManager/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="taskManager/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="taskManager/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="taskManager.task_manager_db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="task_manager_db" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="taskManager/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.taskManager: Compose Deployment" />
+        <item itemvalue="Docker.taskManager/Dockerfile" />
+        <item itemvalue="Application.TaskManagementApplication" />
+        <item itemvalue="Docker.taskManager.task_manager_db: Compose Deployment" />
+        <item itemvalue="JUnit.TaskServiceTest.getTaskTestWhenTaskNotExists" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8557cfeb-47c0-4da6-8a9f-ad4db67e9c34" name="Changes" comment="" />
+      <created>1722610482968</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1722610482968</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Create project">
+      <option name="closed" value="true" />
+      <created>1723314769487</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1723314769487</updated>
+    </task>
+    <task id="LOCAL-00002" summary="refactor DB">
+      <option name="closed" value="true" />
+      <created>1723458418706</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1723458418706</updated>
+    </task>
+    <task id="LOCAL-00003" summary="refactor DB">
+      <option name="closed" value="true" />
+      <created>1723458436829</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1723458436829</updated>
+    </task>
+    <task id="LOCAL-00004" summary="delete trash">
+      <option name="closed" value="true" />
+      <created>1723458923863</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1723458923863</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Create project" />
+    <MESSAGE value="refactor DB" />
+    <MESSAGE value="delete trash" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete trash" />
+  </component>
+</project>

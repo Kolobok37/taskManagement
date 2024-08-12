@@ -1,10 +1,11 @@
 package com.example.taskManagement.manager.mappers;
 
+
+import com.example.taskManagement.manager.dto.TaskInDto;
+import com.example.taskManagement.manager.dto.TaskOutDto;
 import com.example.taskManagement.manager.entities.Comment;
 import com.example.taskManagement.manager.entities.StatusTask;
 import com.example.taskManagement.manager.entities.Task;
-import com.example.taskManagement.manager.dto.TaskOutDto;
-import com.example.taskManagement.manager.dto.TaskInDto;
 
 import java.util.ArrayList;
 import java.util.stream.Collectors;
