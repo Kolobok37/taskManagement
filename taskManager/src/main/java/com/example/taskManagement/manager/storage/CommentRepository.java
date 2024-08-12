@@ -1,6 +1,6 @@
 package com.example.taskManagement.manager.storage;
 
-import com.example.taskManagement.manager.model.Comment;
+import com.example.taskManagement.manager.entities.Comment;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

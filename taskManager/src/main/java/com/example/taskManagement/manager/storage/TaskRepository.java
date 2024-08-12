@@ -1,6 +1,6 @@
 package com.example.taskManagement.manager.storage;
 
-import com.example.taskManagement.manager.model.Task;
+import com.example.taskManagement.manager.entities.Task;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -11,11 +11,9 @@ import java.util.List;
 @Repository
 public interface TaskRepository extends JpaRepository<Task, Long> {
 
-    @Query(value = "SELECT * FROM tasks WHERE creator_id=:idCreator",
-            nativeQuery = true)
+    @Query(value = "from Task t where t.creator.id=:idCreator")
     List<Task> findByCreatorId(Long idCreator, Pageable pageable);
 
-    @Query(value = "SELECT * FROM tasks WHERE performer_id=:idPerformer",
-            nativeQuery = true)
+    @Query(value = "from Task t where t.performer.id=:idPerformer")
     List<Task> findByPerformerId(Long idPerformer, Pageable pageable);
 }
