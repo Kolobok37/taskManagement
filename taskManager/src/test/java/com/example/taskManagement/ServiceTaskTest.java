@@ -50,6 +50,7 @@ import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.mockito.ArgumentMatchers.any;
 
 @ExtendWith(MockitoExtension.class)
 public class ServiceTaskTest {
@@ -98,7 +99,7 @@ public class ServiceTaskTest {
         SecurityContextHolder.setContext(securityContext);
 
 
-        Mockito.when(taskRepository.save(Mockito.any(Task.class)))
+        Mockito.when(taskRepository.save(any(Task.class)))
                 .thenReturn(task);
 
 
@@ -113,29 +114,32 @@ public class ServiceTaskTest {
         SecurityContextHolder.setContext(securityContext);
 
 
-        Mockito.when(taskRepository.findById(Mockito.any(Long.class)))
+        Mockito.when(taskRepository.findById(any(Long.class)))
                 .thenReturn(Optional.empty());
 
         assertThrows(NotFoundException.class, ()->taskService.updateTask(taskInDto,1L));
     }
-//    @Test
-//    void UpdateTask_whenTaskIsExists_thenReturnUpdateTask() {
-//        Authentication authentication = Mockito.mock(Authentication.class);
-//        Mockito.when(authentication.getPrincipal()).thenReturn(user);
-//        SecurityContext securityContext = Mockito.mock(SecurityContext.class);
-//        Mockito.when(securityContext.getAuthentication()).thenReturn(authentication);
-//        SecurityContextHolder.setContext(securityContext);
-//
-//        Mockito.when(taskRepository.findById(Mockito.any(Long.class)))
-//                .thenReturn(Optional.of(task));
-//        Mockito.when(taskRepository.save(task))
-//                .thenReturn(task);
-//        taskInDto = new TaskInDto("UpdateTask","UpdateTestDescription","Mid",
-//                time.plusDays(2));
-//        Task updateTask = new Task(task.getId(),task.getTitle(),task.getDescription(),task.getStatus(),task.getPriority(),
-//                task.getCreationDate(),task.getCompletionDate(),task.getCreator(),task.getPerformer(),task.getComments());
-//
-//        assertEquals(taskService.updateTask(taskInDto,1L),
-//                new ResponseEntity<>(MapperTask.mapToTaskOutDto(updateTask),HttpStatus.OK));
-//    }
+    @Test
+    void UpdateTask_whenTaskIsExists_thenReturnUpdateTask() {
+        Authentication authentication = Mockito.mock(Authentication.class);
+        Mockito.when(authentication.getPrincipal()).thenReturn(user);
+        SecurityContext securityContext = Mockito.mock(SecurityContext.class);
+        Mockito.when(securityContext.getAuthentication()).thenReturn(authentication);
+        SecurityContextHolder.setContext(securityContext);
+
+        Mockito.when(taskRepository.findById(any(Long.class)))
+                .thenReturn(Optional.of(task));
+        Mockito.when(taskRepository.save(any())).thenAnswer(invocationOnMock -> {
+            Task task = (Task) invocationOnMock.getArguments()[0];
+            return task;
+        });
+
+        taskInDto = new TaskInDto("UpdateTask","UpdateTestDescription","Mid",
+                time.plusDays(2));
+        Task updateTask = new Task(task.getId(),taskInDto.getTitle(),taskInDto.getDescription(),task.getStatus(),taskInDto.getPriority(),
+                task.getCreationDate(),taskInDto.getCompletionDate(),task.getCreator(),task.getPerformer(),task.getComments());
+
+        assertEquals(taskService.updateTask(taskInDto,1L),
+                new ResponseEntity<>(MapperTask.mapToTaskOutDto(updateTask),HttpStatus.OK));
+    }
 }

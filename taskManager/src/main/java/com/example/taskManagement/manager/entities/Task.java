@@ -24,7 +24,7 @@ public class Task {
     @Column(name = "description")
     private String description;
     @Column(name = "status")
-    @Enumerated()
+    @Enumerated(EnumType.ORDINAL)
     private StatusTask status;
     @Column(name = "priority")
     private String priority;
