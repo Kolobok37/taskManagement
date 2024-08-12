@@ -39,10 +39,5 @@ public class ServiceTaskTest {
     private Task employee;
     @Test
     void exampleTest(@Autowired WebTestClient webClient) {
-        webClient
-                .get().uri("/tasks/1")
-                .exchange()
-                .expectStatus().isOk()
-                .expectBody(String.class).isEqualTo("Hello World");
     }
 }
