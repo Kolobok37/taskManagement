@@ -22,7 +22,8 @@ public class Task {
     private String title;
     @Column(name = "description")
     private String description;
-    @Column(name = "status")
+    @Column(columnDefinition = "enum('Created','Working','Completed')")
+    @Enumerated(EnumType.STRING)
     private StatusTask status;
     @Column(name = "priority")
     private String priority;
